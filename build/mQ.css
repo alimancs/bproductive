@@ -1,0 +1,73 @@
+#weather-body {
+    height:80px;
+    max-width: 360px;
+    display:flex;
+    place-content: center;
+    margin-top: none;
+    border-radius: 5px;
+}
+#timer-body {
+    height:130px;
+    max-width: 360px;
+    border-radius: 5px;
+}
+#text {
+    font-size: 15px;
+    text-align: center;
+}
+#box1, #box2, #box3, #box4, #box5, #box6, #box6, #box7, #box7, #box8, #box9, #box10 {
+    width:360px;
+    height:40px;
+    border-radius: 5px;
+}
+button[onclick="deleteToDo(1)"], button[onclick="deleteToDo(2)"], button[onclick="deleteToDo(3)"], button[onclick="deleteToDo(4)"], button[onclick="deleteToDo(5)"], button[onclick="deleteToDo(6)"], button[onclick="deleteToDo(7)"],button[onclick="deleteToDo(8)"],button[onclick="deleteToDo(9)"],button[onclick="deleteToDo(10)"] {
+    border-radius: 5px;
+    height:35px;
+}
+#to-do-body {
+    max-width: 365px;
+    height:550px;
+    margin-bottom:170px;
+    border-radius: 5px;
+}
+#timer {
+    font-size:40px;
+    font-family: sans-serif;
+}
+#setminute, #setsecond {
+    height:20px;
+}
+#pause, #continue, #start, #reset {
+    font-size:15px;
+    font-family: sans-serif;
+}
+#temp, #w-type, #humidity, #w-speed {
+    font-size: 15px;
+    text-align: center;
+}
+#location {
+    font-size: 20px;
+    text-align: center;
+}
+#sub-body {
+    height:1000px;
+    background-image: url(https://picsum.photos/1230/990);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    display:grid;
+
+}
+#add-button {
+    width:41px;
+    border-radius: 5px;
+}
+#new-td {
+    border-radius: 5px;
+}
+/* #timerbuttonbox {
+    display:grid;
+
+}
+#resetbox {
+    display:grid;
+} */

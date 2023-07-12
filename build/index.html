@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mQ.css" media="(max-width:832px)" >
+    <script src="script.js"></script>
+    <title>web utility</title>
+</head>
+<body>
+    
+    <div id="sub-body">
+        <div id="w-t-box">
+
+            <div id="weather-body">
+                <span id="location">Weather in Abuja</span>
+                <div id="tempc">
+                    <span id="temp">30℃</span>
+                    <img id="icon">
+                </div>
+                <div id="type-h">
+                    <span id="w-type">cloudy</span>
+                    <span id="humidity">Humidity:10%</span>
+                </div>
+                <span id="w-speed">Wind Speed:3.9Km/H</span>
+                <div id="loader"></div>
+            </div>
+
+            <div id="timer-body">
+                <div id="timer">
+                    <span id="minutes">0</span>
+                    <span id="divider">&nbsp;:&nbsp;</span>
+                    <span id="seconds">0</span>
+                </div>
+
+                <div id="set-timerbox">
+                    <input type="number" value="0" min="1" id="setminute">
+                    <input type="number" value="0" max="60" min="1" id="setsecond">              
+                </div>
+                <div id="timerbuttonbox">
+                    <button onclick="pauseTimer(down)" id="pause">pause</button>
+                    <button onclick="continueTimer()" id="continue">continue</button>
+                </div>
+                <div id="resetbox">
+                    <button id="start" onclick="startTimer()">start/restart</button>
+                    <button id="reset" onclick="resetTimer(down)"  >reset</button>
+                </div>
+            </div>
+        
+        </div>
+        <div id="to-do-body">
+            <span id="ind">0</span>
+            <div id="new-td-box">
+                <input id="new-td" placeholder="write here">
+                <button onclick="createToDo(toDos)" id="add-button">+</button>
+            </div>
+            <div id="to-dos">
+
+            </div>
+        </div>
+        <!-- <div id="ebook-body">
+            <div id="import-box">
+                <input id="fil" type="file" >
+                <button id="import">Import</button>
+            </div>
+            <iframe id="book" src="front-end-developer-resume-example.pdf" framborder="0"></iframe>
+        </div> -->
+
+    </div>
+
+</body>
+</html>

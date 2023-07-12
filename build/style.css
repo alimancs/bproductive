@@ -1,0 +1,203 @@
+body {
+    margin:0px;
+    display:grid;
+}
+:root {
+    --primary:rgb(91, 91, 91);
+    --secondary:rgb(53, 53, 53);
+    --other:rgb(184, 184, 184);
+    --tertiary:rgb(238, 96, 96);
+}
+#sub-body {
+    background-color:var(--secondary);
+    max-width:1230px;
+    height:fit-content;
+    margin:0px;
+    display:flex;
+    flex-wrap:wrap;
+    place-content: center;
+    background-image: url(https://picsum.photos/1230/600);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+#to-do-body {
+    width:388.5px;
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.453);
+    margin: 5px;
+    height:590px;
+    border-radius: 10px;
+} 
+#w-t-box {
+    display:grid;
+}
+#timer-body, #weather-body {
+    width:388.5px;
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.453);
+    margin: 10px;
+    border-radius: 10px;
+    height: 280px;
+    display:grid;
+    place-content: center;
+}
+/* #timer-body {
+    place-content: center;
+} */
+
+#new-td {
+    width:300px;
+    height: 20px;
+    border-radius: 35px;
+    background-color: rgb(222, 222, 222);
+    border:none;
+    font-size: 17px;
+    padding:10px;
+}
+#new-td:focus {
+    outline: none;
+    box-shadow: 0 0 10px 0 rgb(155, 155, 155);
+}
+#add-button {
+    height:32px;
+    width:45px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--tertiary);
+    border-radius: 30px;
+    color:white;
+}
+#add-button:hover {
+    background-color: var(--tertiary);
+    filter: contrast(150%);
+}
+#box1, #box2, #box3, #box4, #box5, #box6, #box6, #box7, #box7, #box8, #box9, #box10 {
+    display:flex;
+    border:0.5px var(--primary) solid;
+    border-radius: 25px;
+    margin-top:4px;
+    width:385px;
+    place-content: left;
+    height:48px;
+}
+input[type="checkbox"] {
+    width:20px;
+    height: 20px;
+}
+#check-container {
+    display:grid;
+    place-content: center;
+}
+#text {
+    font-size:18px;
+    font-family: sans-serif;
+    color:white;
+}
+button[onclick="deleteToDo(1)"], button[onclick="deleteToDo(2)"], button[onclick="deleteToDo(3)"], button[onclick="deleteToDo(4)"], button[onclick="deleteToDo(5)"], button[onclick="deleteToDo(6)"], button[onclick="deleteToDo(7)"],button[onclick="deleteToDo(8)"],button[onclick="deleteToDo(9)"],button[onclick="deleteToDo(10)"] {
+    height :40px;
+    width:40px;
+    background-color:var(--primary);
+    color:white;
+    border:none;
+    border-radius: 50%;
+    right:2px;
+    font-size: 20px;
+    transition: background-color 0.4s ease-in-out;
+}
+button[onclick="deleteToDo(1)"]:hover, button[onclick="deleteToDo(2)"]:hover, button[onclick="deleteToDo(3)"]:hover, button[onclick="deleteToDo(4)"]:hover, button[onclick="deleteToDo(5)"]:hover, button[onclick="deleteToDo(6)"]:hover, button[onclick="deleteToDo(7)"]:hover,button[onclick="deleteToDo(8)"]:hover,button[onclick="deleteToDo(9)"]:hover,button[onclick="deleteToDo(10)"]:hover {
+    background-color: red;
+}
+p {
+    width:326px;
+}
+#del-container {
+    display:grid;
+    place-content: center;
+}
+#ind {
+    display:none;
+}
+#timer {
+    display:flex;
+    place-content: center;
+    font-size: 70px;
+    font-weight: 550;
+    font-family: cursive;
+    color:white;
+}
+#set-timerbox {
+    display:flex;
+    place-content: center;
+}
+#setminute, #setsecond {
+    width:35px;
+    height:35px;
+    font-size:20px;
+    margin-left:10px;
+    margin-right:10px;
+    border-radius: 8px;
+    border:none;
+}
+#timerbuttonbox {
+    display:flex;
+    place-content: center;
+    margin-top:7px;
+}
+#pause, #continue, #start, #reset {
+    margin-left: 5px;
+    margin-right: 5px;
+    color:var(--other);
+    background-color: var(--primary);
+    border:2px var(--other) solid;
+    border-radius: 5px;
+    font-size:17px;
+    font-family: cursive;
+    transition: background-color 0.3s ease-in-out;
+}
+#reset {
+    display:none;
+}
+#pause:hover, #continue:hover, #start:hover, #reset:hover {
+    background-color: var(--tertiary);
+    color:white;
+    border-color: white;
+
+}
+#resetbox {
+    display:flex;
+    place-content: center;
+    margin-top:8px;
+}
+
+#location {
+    font-family: sans-serif;
+    color:white;
+    margin-left:20px;
+    font-size: 30px;
+}
+#temp {
+    font-size:30px;
+    color:white;
+    margin-left:20px;
+}
+#humidity, #w-speed, #w-type , #icon{
+    font-size:17px;
+    color:white;
+    margin-left:20px;
+    font-size: 25px;
+}
+#humidity, #w-speed, #w-type , #icon, #location, #temp {
+    display:none;
+}
+#loader {
+    width:25px;
+    height:25px;
+    border:3px solid rgb(255, 255, 255);
+    border-top:3px solid rgb(3, 175, 187);
+    border-radius: 50%;
+    animation:load 0.2s linear infinite;
+}
+@keyframes load {
+    100%{transform:rotateZ(360deg)}
+}
